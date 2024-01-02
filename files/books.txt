@@ -1,0 +1,26 @@
+12345
+1890-02-12
+Sult
+Knut Hamsun
+111
+CLASSIC
+3
+2
+En fin dag
+23
+En enda finere dag
+34
+---
+23456
+1902-03-01
+Victoria
+Knut Hamsun
+75
+CLASSIC
+4
+2
+Title1
+20
+Title2
+25
+---
