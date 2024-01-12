@@ -1,7 +1,6 @@
 package eksempler._02;
 
 public class Bicycle {
-
     int speed = 0;
     int gear = 1;
     boolean isFast;
@@ -20,6 +19,13 @@ public class Bicycle {
 
     void printStates() {
         System.out.println("Speed:" +
-                speed + " gear:" + gear);
+                speed + " gear:" + gear + " isFast:"+isFast);
+    }
+
+    public void speedUntil20() {
+        do {
+            System.out.println("Speeding up bicycle2");
+            speedUp(1);
+        } while(speed<20);
     }
 }

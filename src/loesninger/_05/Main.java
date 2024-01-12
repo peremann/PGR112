@@ -13,7 +13,6 @@ public class Main {
         b1.setChapters(new ArrayList<Chapter>());
         br.addBook(b1);
 
-
         Book b2 = new Book();
         b2.setTitle("Victoria");
         b2.setGenre(Genre.CLASSIC);
