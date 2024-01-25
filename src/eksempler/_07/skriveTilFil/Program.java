@@ -2,26 +2,32 @@ package eksempler._07.skriveTilFil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Program {
-    public void methodA() {
+    public void methodA() throws IOException {
         System.out.println("In methodA...");
         System.out.println("Calling methodB...");
         methodB();
         System.out.println("MethodA done! Returning to caller.");
     }
 
-    public void methodB() {
+    public void methodB() throws IOException {
         System.out.println("In methodB...");
         System.out.println("Calling methodC...");
         methodC();
         System.out.println("MethodB done! Returning to caller.");
     }
 
-    public void methodC() {
+    public void methodC() throws IOException {
         System.out.println("In methodC...");
-        // Paste code from slide here...
+        FileWriter writer = new FileWriter("ut.txt");
+        writer.write("Dette er en test!\n");
+        writer.write("Ser ut som om det gikk bra!!!");
+        writer.close();
+
         System.out.println("MethodC done! Returning to caller.");
     }
 }

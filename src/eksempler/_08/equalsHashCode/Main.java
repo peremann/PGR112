@@ -7,6 +7,8 @@ public class Main {
         Animal a2 = new Animal();
         a2.setName("Per");
         //Test equals
+        boolean b = a1.equals(a2);
+        System.out.println(b);
         //Test hashCode
         //Implement equals and hashCode in Animal
     }

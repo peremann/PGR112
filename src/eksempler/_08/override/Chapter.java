@@ -20,7 +20,6 @@ public class Chapter {
         this.numberOfPages = numberOfPages;
     }
 
-
     @Override
     public String toString() {
         return "Chapter{" +
@@ -28,6 +27,8 @@ public class Chapter {
                 ", numberOfPages=" + numberOfPages +
                 '}';
     }
+
+
 
     public String toFileFormat() {
         return title + '\n' +

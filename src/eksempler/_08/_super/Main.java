@@ -6,8 +6,11 @@ public class Main {
         pc.setStringInParentClass("Parent string");
         MiddleClass mc = new MiddleClass();
         mc.setStringInMiddleClass("Middle string");
+        mc.setStringInParentClass("Parent string set in middle class");
         SubClass sc = new SubClass();
         sc.setStringInSubClass("Sub string");
+        sc.setStringInMiddleClass("Middle string set in sub class");
+        sc.setStringInParentClass("Parent string set in sub class");
 
         System.out.println("XXX Calling pc.printState");
         pc.printState();

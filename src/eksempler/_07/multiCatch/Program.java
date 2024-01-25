@@ -12,9 +12,7 @@ public class Program {
         try {
             Scanner scanner = new Scanner(file);
             FileWriter writer = new FileWriter("ut.txt");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

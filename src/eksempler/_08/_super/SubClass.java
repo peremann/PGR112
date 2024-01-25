@@ -11,10 +11,9 @@ public class SubClass extends MiddleClass {
         this.stringInSubClass = stringInSubClass;
     }
 
-    public void printSubClassState(){
-        System.out.println("---------------");
-        System.out.println("stringInParentClass:"+stringInParentClass);
-        System.out.println("stringInMiddleClass:"+stringInMiddleClass);
+    @Override
+    public void printState(){
+        super.printState();
         System.out.println("stringInSubClass:"+stringInSubClass);
     }
 

@@ -1,7 +1,7 @@
 package eksempler._10.immutable;
 
 public abstract class Animal {
-    private int id;
+    private final int id;
 
     public Animal(int id){
         this.id = id;
@@ -9,10 +9,6 @@ public abstract class Animal {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public abstract void makeSound();

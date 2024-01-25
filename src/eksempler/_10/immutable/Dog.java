@@ -1,17 +1,9 @@
 package eksempler._10.immutable;
 
-public class Dog extends Animal {
-    private int age;
-    private String name;
+public final class Dog extends Animal {
+    private final int age;
+    private final String name;
 
-    public Dog(int id){
-        super(id);
-    }
-
-    public Dog(int id, String name){
-        super(id);
-        this.name = name;
-    }
     public Dog(int id, int age, String name) {
         super(id);
         this.age = age;
@@ -22,17 +14,10 @@ public class Dog extends Animal {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public void makeSound() {

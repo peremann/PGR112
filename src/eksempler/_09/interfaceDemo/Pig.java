@@ -12,4 +12,8 @@ public class Pig implements Animal{
         // The body of sleep() is provided here
         System.out.println("Zzz");
     }
+
+    public void someMethod(){
+        System.out.println("Something");
+    }
 }

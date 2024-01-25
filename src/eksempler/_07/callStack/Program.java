@@ -11,17 +11,21 @@ public class Program {
     public void methodB() {
         System.out.println("In methodB...");
         System.out.println("Calling methodC...");
-        methodC();
+        try{
+            methodC();
+        } catch(ArithmeticException ae){
+            System.out.println("Huff da: Unntak...");
+        }
         System.out.println("MethodB done! Returning to caller.");
     }
 
     public void methodC() {
         System.out.println("In methodC...");
-/*
+
         int i1 = 5;
         int i2 = 0;
         System.out.println("i1/i2=" + i1/i2);
- */
+
         System.out.println("MethodC done! Returning to caller.");
     }
 }

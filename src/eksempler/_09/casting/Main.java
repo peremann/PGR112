@@ -15,6 +15,12 @@ public class Main {
             a.animalSound();
             a.sleep();
             // Let's try some casting...
+            // Why not get an exception first...
+            if(a instanceof Cat c){
+                c.exclusiveCatMethod();
+            } else if (a instanceof Pig p){
+                p.exclusivePigMethod();
+            }
         }
     }
 }
