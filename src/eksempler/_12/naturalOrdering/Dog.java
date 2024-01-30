@@ -2,7 +2,7 @@ package eksempler._12.naturalOrdering;
 
 import java.util.Objects;
 
-public class Dog {
+public class Dog implements Comparable<Dog>{
     private int age;
     private String name;
 
@@ -50,5 +50,10 @@ public class Dog {
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Dog o) {
+        return this.name.compareTo(o.getName());
     }
 }

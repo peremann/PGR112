@@ -16,10 +16,17 @@ public class Main {
         dogs.add(d);
         dogs.add(d2);
         dogs.add(d3);
-        //Collections.sort(dogs);
+        Collections.sort(dogs);
+        System.out.println("---");
+        for (Dog dog : dogs) {
+            System.out.println(dog);
+        }
+        System.out.println("d2 d3 equal:"+d2.equals(d3));
+        System.out.println("d2 d3 compareTo:"+d2.compareTo(d3));
         // Implement Comparable
+        // Compare equals and compareTo for d2 and d3
         // Try comparing only on name
-        // Compare equals and compareTo
+        // Compare equals and compareTo for d2 and d3
 
     }
 }
