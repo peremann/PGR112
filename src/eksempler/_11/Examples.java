@@ -2,6 +2,8 @@ package eksempler._11;
 
 import java.time.LocalDate;
 
+import static java.lang.Math.*;
+
 public class Examples {
 
     private static int someInt = 1;
