@@ -52,7 +52,7 @@ public class BoardGameProvider {
              PreparedStatement statement = con.prepareStatement(GET_BOARDGAME_SQL);
         ) {
             statement.setInt(1, boardGameId);
-            try (ResultSet rs = statement.executeQuery(GET_ALL_BOARDGAMES_SQL)){
+            try (ResultSet rs = statement.executeQuery()){
                 if(rs.next()){
                     String name = rs.getString("navn");
                     String type = rs.getString("type");
