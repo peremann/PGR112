@@ -1,0 +1,149 @@
+NSW
+New South Wales
+Oceania
+Australia and New Zealand
+800642.00
+2024
+8339347
+79.8
+51182.00
+92911.00
+New South Wales
+Constitutional Monarchy, Federation
+Charles III
+130
+NS
+5
+130
+135
+137
+138
+139
+2
+English
+T
+95.0
+German
+F
+2.0
+---
+VIC
+Victoria
+Oceania
+Australia and New Zealand
+227416.00
+2024
+6812477
+79.8
+51182.00
+92911.00
+Victoria
+Constitutional Monarchy, Federation
+Charles III
+131
+VT
+2
+131
+141
+2
+English
+T
+96.0
+Greek
+F
+2.0
+---
+QUE
+Queensland
+Oceania
+Australia and New Zealand
+1730648.00
+2024
+5459413
+79.8
+51182.00
+92911.00
+Queensland
+Constitutional Monarchy, Federation
+Charles III
+132
+QU
+4
+132
+136
+142
+143
+2
+English
+T
+97.0
+Canton Chinese
+F
+1.0
+---
+WEA
+Western Australia
+Oceania
+Australia and New Zealand
+2529875.00
+2024
+2527013
+79.8
+51182.00
+92911.00
+Western Australia
+Constitutional Monarchy, Federation
+Charles III
+133
+WA
+1
+133
+1
+English
+T
+99.1
+---
+SOA
+South Australia
+Oceania
+Australia and New Zealand
+983482.00
+2024
+1851704
+79.8
+51182.00
+92911.00
+South Australia
+Constitutional Monarchy, Federation
+Charles III
+134
+SU
+1
+134
+1
+English
+T
+99.3
+---
+TAS
+Tasmania
+Oceania
+Australia and New Zealand
+68401.00
+2024
+572780
+79.8
+51182.00
+92911.00
+Tasmania
+Constitutional Monarchy, Federation
+Charles III
+140
+TA
+1
+140
+1
+English
+T
+96.9
+---
