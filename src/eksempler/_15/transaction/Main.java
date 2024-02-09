@@ -19,11 +19,11 @@ public class Main {
 
     private static List<BoardGame> getBoardGamesToAdd() {
         List<BoardGame> newBoardGames = new ArrayList<>();
-        newBoardGames.add(new BoardGame(6, "spill6", "Strategi", 5, 90, 12, "spill6.jpg"));
-        newBoardGames.add(new BoardGame(7, "spill7", "Strategi", 5, 90, 12, "spill7.jpg"));
-        newBoardGames.add(new BoardGame(7, "spill8", "Strategi", 5, 90, 12, "spill8.jpg"));
-        newBoardGames.add(new BoardGame(9, "spill9", "Strategi", 5, 90, 12, "spill9.jpg"));
-        newBoardGames.add(new BoardGame(10, "spill10", "Strategi", 5, 90, 12, "spill10.jpg"));
+        newBoardGames.add(new BoardGame(11, "spill11", "Strategi", 5, 90, 12, "spill6.jpg"));
+        newBoardGames.add(new BoardGame(12, "spill12", "Strategi", 5, 90, 12, "spill7.jpg"));
+        newBoardGames.add(new BoardGame(12, "spill13", "Strategi", 5, 90, 12, "spill8.jpg"));
+        newBoardGames.add(new BoardGame(14, "spill14", "Strategi", 5, 90, 12, "spill9.jpg"));
+        newBoardGames.add(new BoardGame(15, "spill15", "Strategi", 5, 90, 12, "spill10.jpg"));
         return newBoardGames;
     }
 

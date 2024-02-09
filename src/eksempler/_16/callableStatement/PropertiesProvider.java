@@ -1,4 +1,4 @@
-package eksempler._14;
+package eksempler._16.callableStatement;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class PropertiesProvider {
     public static final Properties PROPS;
+
     private PropertiesProvider(){}
 
     static{

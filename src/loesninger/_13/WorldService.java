@@ -83,6 +83,7 @@ public class WorldService {
 
     public List<City> getAllCitiesByCountryCode(String countryCode){
         String query =  String.format(GET_ALL_CITIES_BY_COUNTRY_CODE_SQL+"'%s'", countryCode);
+        System.out.println("Query:"+query);
         List<City> cities = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PWD);
              Statement stmt = conn.createStatement();

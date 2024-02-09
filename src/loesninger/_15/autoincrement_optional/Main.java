@@ -1,16 +1,12 @@
-package loesninger._15;
+package loesninger._15.autoincrement_optional;
 
-import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
         Program p = new Program();
         try {
-            p.splitAustralia();
-        } catch (FileNotFoundException e) {
-            System.out.println("FileNotFoundException caught:"+e.getMessage());
-            e.printStackTrace();
+            p.run();
         } catch (SQLException e) {
             System.out.println("SQL exception caught:"+e.getMessage());
             e.printStackTrace();

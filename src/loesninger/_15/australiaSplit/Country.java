@@ -1,4 +1,4 @@
-package loesninger._15;
+package loesninger._15.australiaSplit;
 
 public record Country(String code, String name, String continent,
                       String region, float surfaceArea, int indepYear, int population,

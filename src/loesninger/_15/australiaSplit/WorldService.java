@@ -1,4 +1,4 @@
-package loesninger._15;
+package loesninger._15.australiaSplit;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 

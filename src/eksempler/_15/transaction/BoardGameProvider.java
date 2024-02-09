@@ -25,6 +25,7 @@ public class BoardGameProvider {
         try (Connection con = boardGameDS.getConnection();
              PreparedStatement statement = con.prepareStatement(ADD_BOARDGAME_SQL);
         ) {
+            boolean autoCommit = con.getAutoCommit();
             con.setAutoCommit(false);
             try{
                 for (BoardGame newBoardGame : newBoardGames) {
@@ -38,11 +39,14 @@ public class BoardGameProvider {
                     statement.executeUpdate();
                 }
                 con.commit();
-            } catch(SQLException e){
-                System.out.println("Exception caught. Rolling back transaction");
+            } catch (SQLException sqle){
+                System.out.println("Exception caught. Rolling back");
                 con.rollback();
-                throw e;
+                throw sqle;
+            } finally {
+                con.setAutoCommit(autoCommit);
             }
+
         }
     }
 }

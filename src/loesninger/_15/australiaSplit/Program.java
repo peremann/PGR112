@@ -1,10 +1,9 @@
-package loesninger._15;
+package loesninger._15.australiaSplit;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Scanner;
 
 public class Program {
