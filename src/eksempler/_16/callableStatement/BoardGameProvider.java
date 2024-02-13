@@ -16,7 +16,7 @@ public class BoardGameProvider {
     private static final String UPDATE_BOARDGAME_SQL = "UPDATE Brettspill SET navn=?, type=?, antall_spillere=?, spilletid=?, aldersgrense=?, bilde=? WHERE brettspill_id=?";
     private static final String DELETE_BOARDGAME_SQL = "DELETE FROM Brettspill WHERE brettspill_id =?";
     private static final String ADD_BOARDGAME_SQL2 = "INSERT INTO Brettspill (navn, type, antall_spillere, spilletid, aldersgrense, bilde) VALUES(?,?,?,?,?,?)";
-    private static final String ADD_BOARD_GAME_CALLABLE_STATEMENT = "{call addBoardGame(?,?,?,?,?,?,?)}";
+    private static final String CALL_ADD_BOARD_GAME = "{call addBoardGame(?,?,?,?,?,?,?)}";
     private final MysqlDataSource boardGameDS;
 
     public BoardGameProvider(){
@@ -85,19 +85,18 @@ public class BoardGameProvider {
         }
     }
 
-    public int addBoardGameUsingStoredProcedure(BoardGame bg) throws SQLException {
+    public int addBoardGameUsingStoredProcedure(String name, String type, int nrOfPlayers, int minutes, int ageLimit, String imageUrl) throws SQLException {
         try (Connection con = boardGameDS.getConnection();
-             CallableStatement statement = con.prepareCall(ADD_BOARD_GAME_CALLABLE_STATEMENT);
+             CallableStatement statement = con.prepareCall(CALL_ADD_BOARD_GAME);
         ) {
-            statement.setString(1, bg.name());
-            statement.setString(2, bg.type());
-            statement.setInt(3, bg.nrOfPlayers());
-            statement.setInt(4, bg.minutes());
-            statement.setInt(5, bg.ageLimit());
-            statement.setString(6, bg.imageUrl());
+            statement.setString(1, name);
+            statement.setString(2, type);
+            statement.setInt(3, nrOfPlayers);
+            statement.setInt(4, minutes);
+            statement.setInt(5, ageLimit);
+            statement.setString(6, imageUrl);
             statement.registerOutParameter(7, Types.INTEGER);
             statement.executeUpdate();
-            // Returning generated id
             return statement.getInt(7);
         }
     }

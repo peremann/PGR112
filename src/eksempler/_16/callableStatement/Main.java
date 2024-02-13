@@ -7,8 +7,7 @@ public class Main {
         BoardGameProvider bgp = new BoardGameProvider();
         try {
             System.out.println("Trying to add new board game using callable statement");
-            BoardGame bg1 = new BoardGame(0, "Citadels", "Strategi", 7, 120, 10, "citadels.jpg");
-            int generatedId = bgp.addBoardGameUsingStoredProcedure(bg1);
+            int generatedId = bgp.addBoardGameUsingStoredProcedure("Citadels", "Strategi", 7, 120, 10, "citadels.jpg");
             System.out.println("Result:"+generatedId);
         } catch (SQLException e) {
             System.out.println("SQL exception caught:"+e.getMessage());
