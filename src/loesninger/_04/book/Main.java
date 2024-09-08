@@ -8,9 +8,5 @@ public class Main {
         b.setNumberOfPages(111);
         b.setGenre(Genre.CLASSIC);
         b.printMe();
-        System.out.println("----------");
-        b.setTitle("Victoria");
-        b.setNumberOfPages(75);
-        b.printMe();
     }
 }
