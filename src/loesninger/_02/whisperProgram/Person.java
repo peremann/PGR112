@@ -1,4 +1,4 @@
-package loesninger._02;
+package loesninger._02.whisperProgram;
 
 import java.util.Random;
 
