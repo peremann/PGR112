@@ -30,10 +30,15 @@ public class Assignment {
      * One String on each line.
      */
     public void printAllStrings(String[] strings){
-        for (String s :
+        for (String string :
                 strings) {
-            System.out.println(s);
+            System.out.println(string);
         }
+        /*
+        for(int i = 0; i<strings.length; i++){
+            System.out.println(strings[i]);
+        }
+         */
 
     }
 
@@ -72,17 +77,10 @@ public class Assignment {
      */
     public void printCourseName(String courseCode){
         switch (courseCode){
-            case "PGR103" :
-                System.out.println("Objektorientert programmering");
-                break;
-            case "DB1102" :
-                System.out.println("Database");
-                break;
-            case "TK2100" :
-                System.out.println("Informasjonssikkerhet");
-                break;
-            default:
-                System.out.println("Unknown");
+            case "PGR103" -> System.out.println("Objektorientert programmering");
+            case "DB1102" -> System.out.println("Database");
+            case "TK2100" -> System.out.println("Informasjonssikkerhet");
+            default -> System.out.println("Unknown");
         }
 
     }
