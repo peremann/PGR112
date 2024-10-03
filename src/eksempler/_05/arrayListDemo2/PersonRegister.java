@@ -8,4 +8,8 @@ public class PersonRegister {
     public void addPerson(Person p){
         persons.add(p);
     }
+
+    public int personsInRegister(){
+        return persons.size();
+    }
 }
