@@ -1,4 +1,4 @@
-package eksempler._05;
+package eksempler._05.arrayListDemo2;
 
 public class Person {
     private int age;

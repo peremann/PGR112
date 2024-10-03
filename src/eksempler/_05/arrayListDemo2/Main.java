@@ -1,9 +1,10 @@
-package eksempler._05;
+package eksempler._05.arrayListDemo2;
 
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        //Kode denne fra scratch i videoen. Henvise til de to andre klassene som allerede er laget.
         //Create ArrayList
         PersonRegister pr = new PersonRegister();
         ArrayList<Person> persons = new ArrayList<>();

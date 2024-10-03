@@ -1,4 +1,4 @@
-package eksempler._05;
+package eksempler._05.arrayListDemo2;
 
 import java.util.ArrayList;
 

@@ -21,11 +21,4 @@ public class Bicycle {
         System.out.println("Speed:" +
                 speed + " gear:" + gear + " isFast:"+isFast);
     }
-
-    public void speedUntil20() {
-        do {
-            System.out.println("Speeding up bicycle2");
-            speedUp(1);
-        } while(speed<20);
-    }
 }
