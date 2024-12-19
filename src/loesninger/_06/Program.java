@@ -142,8 +142,4 @@ public class Program {
         book.setChapters(chapters);
         bookRegister.addBook(book);
     }
-
-
-
-
 }

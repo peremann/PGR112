@@ -1,9 +1,7 @@
-package eksempler._06;
+package eksempler._06.menyeksempel;
 
 public class Main {
     public static void main(String[] args) {
-        String s = args[0];
-        System.out.println(s);
         Program p = new Program();
         p.run();
     }

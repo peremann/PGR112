@@ -1,4 +1,4 @@
-package eksempler._06;
+package eksempler._06.menyeksempel;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -33,9 +33,9 @@ public class Program {
 
     private void enterDate() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter date on format YYY-MM-DD");
+        System.out.println("Enter date on format YYYY-MM-DD");
         String s = scanner.nextLine();
-        LocalDate ld = LocalDate.parse(s);
-        System.out.println("Date was before now:"+ld.isBefore(LocalDate.now()));
+        LocalDate date = LocalDate.parse(s);
+        System.out.println("You entered:" + date);
     }
 }
