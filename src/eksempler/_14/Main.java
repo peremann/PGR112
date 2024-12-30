@@ -1,50 +1,32 @@
 package eksempler._14;
 
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        BoardGameProvider bgp = new BoardGameProvider();
-        try {
-            // Retrieving all boardgames
-            List<BoardGame> boardGames = bgp.getBoardGames();
-            printAllBoardGames(boardGames);
-            // Adding a board game
-            System.out.println("Trying to add a board game");
-            BoardGame bg = new BoardGame(6, "Agricola", "Strategi", 5, 90, 12, "agricola.jpg");
-            int rowsAffected = bgp.addBoardGame(bg);
-            System.out.println("Rows affected:"+rowsAffected);
-            boardGames = bgp.getBoardGames();
-            printAllBoardGames(boardGames);
-            //Updating a board game
-            System.out.println("Trying to update the new board game with age limit 99 and minutes 199");
-            BoardGame updatedBoardGame = new BoardGame(bg.id(), bg.name(), bg.type(), bg.nrOfPlayers(), 199, 99, bg.imageUrl());
-            rowsAffected = bgp.updateBoardGame(updatedBoardGame);
-            System.out.println("Rows affected:"+rowsAffected);
-            boardGames = bgp.getBoardGames();
-            printAllBoardGames(boardGames);
-            //Deleting a board game
-            System.out.println("Trying to delete the new board game");
-            rowsAffected = bgp.deleteBoardGame(updatedBoardGame);
-            System.out.println("Rows affected:"+rowsAffected);
-            boardGames = bgp.getBoardGames();
-            printAllBoardGames(boardGames);
-            //Get board game from id
-            System.out.println("Trying to get board game with id=1");
-            BoardGame bg1 = bgp.getBoardGame(1);
-            System.out.println(bg1);
-
-        } catch (SQLException e) {
-            System.out.println("SQL exception caught:"+e.getMessage());
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/brettspill", "<uname>", "<pwd>");
+             Statement statement = con.createStatement();
+             ResultSet rs = statement.executeQuery("SELECT * FROM brettspill")){
+            List<BoardGame> boardGames = new ArrayList<>();
+            while(rs.next()){
+                int id = rs.getInt("brettspill_id");
+                String name = rs.getString("navn");
+                String type = rs.getString("type");
+                int nrOfPlayers = rs.getInt("antall_spillere");
+                int minutes = rs.getInt("spilletid");
+                int ageLimit = rs.getInt("aldersgrense");
+                String imageUrl = rs.getString("bilde");
+                BoardGame bg = new BoardGame(id, name, type, nrOfPlayers, minutes, ageLimit, imageUrl);
+                boardGames.add(bg);
+            }
+            for (BoardGame boardGame : boardGames) {
+                System.out.println(boardGame);
+            }
+        } catch(SQLException e){
+            System.out.println("Unable to connect to database:"+e.getMessage());
             e.printStackTrace();
-        }
-    }
-
-    private static void printAllBoardGames(List<BoardGame> boardGames) {
-        System.out.println("All board games:");
-        for (BoardGame boardGame : boardGames) {
-            System.out.println(boardGame);
         }
     }
 }
