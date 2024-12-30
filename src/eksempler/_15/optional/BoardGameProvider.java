@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static eksempler._14.PropertiesProvider.PROPS;
+import static eksempler._15.optional.PropertiesProvider.PROPS;
 
 public class BoardGameProvider {
     // You may consider having these SQL statements in a separate file.

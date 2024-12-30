@@ -6,7 +6,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static eksempler._14.PropertiesProvider.PROPS;
+import static eksempler._15.transaction.PropertiesProvider.PROPS;
+
 
 public class BoardGameProvider {
     private static final String ADD_BOARDGAME_SQL = "INSERT INTO Brettspill VALUES(?,?,?,?,?,?,?)";

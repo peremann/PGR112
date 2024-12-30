@@ -1,8 +1,5 @@
 package loesninger._14;
 
-public record Country(String code, String name, Continent continent,
-                      String region, float surfaceArea, int indepYear, int population,
-                      float lifeExpectancy, float gnp, float gnpOld,
-                      String localName, String governmentForm, String headOfState,
-                      int capital, String code2) {
+public record Country(String code, String name, String continent,
+                     float surfaceArea, int population, int indepYear, int capital) {
 }
