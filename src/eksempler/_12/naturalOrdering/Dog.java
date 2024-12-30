@@ -52,8 +52,27 @@ public class Dog implements Comparable<Dog>{
                 '}';
     }
 
+    /*
+    Not recommended. compareTo does not align with equals
+     */
+    /*
     @Override
-    public int compareTo(Dog o) {
-        return this.name.compareTo(o.getName());
+    public int compareTo(Dog d) {
+        return this.name.compareTo(d.getName());
+    }
+     */
+
+    /*
+    As displayed in video.
+    As name is of type String, we could do better regarding possible null values (not implemented here)
+     */
+    @Override
+    public int compareTo(Dog d) {
+        int i = this.name.compareTo(d.getName());
+        if(i!=0){
+            return i;
+        } else {
+            return this.age - d.getAge();
+        }
     }
 }

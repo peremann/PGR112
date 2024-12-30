@@ -16,7 +16,7 @@ public class Main {
         dogs.add(d3);
         // Call sort using DogNameComparator
         Collections.sort(dogs, new DogNameComparator());
-        // Show lambda also?
+        // Using lambda expression (more on this later in the course)
         Collections.sort(dogs, (dog1, dog2) ->{return dog1.getName().compareTo(dog2.getName());});
         System.out.println("Sorted");
         for (Dog dog : dogs) {

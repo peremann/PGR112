@@ -4,7 +4,6 @@ public abstract class Animal {
     private int id;
 
     public Animal(int id) {
-        System.out.println("Inne i animal const");
         this.id = id;
     }
 

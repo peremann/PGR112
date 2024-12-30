@@ -10,7 +10,7 @@ public class Main {
         try {
             p.methodA();
         } catch (IOException e) {
-            System.out.println("Exception caught:"+e.getMessage());
+            System.out.println("Unable to write to file. Exception:"+e.getMessage());
             e.printStackTrace();
         }
         System.out.println("main done. Program done:)");

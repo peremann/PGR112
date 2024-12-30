@@ -14,6 +14,6 @@ public class Pig implements Animal{
     }
 
     public void someMethod(){
-        System.out.println("Something");
+        System.out.println("aaaaaaaaaaaa");
     }
 }

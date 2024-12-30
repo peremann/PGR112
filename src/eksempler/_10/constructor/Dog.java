@@ -9,8 +9,12 @@ public class Dog {
         this.name = name;
     }
 
-    public Dog(int age){
-        this.age = age;
+    public Dog(String name){
+        this.name = name;
+    }
+
+    public Dog(){
+
     }
 
     public int getAge() {

@@ -4,18 +4,14 @@ public class Dog extends Animal{
     private int age;
     private String name;
 
-    public Dog(int id){
-        this(id, 0, null);
-    }
-
-    public Dog(int id, String name){
-        this(id, 0, name);
-    }
     public Dog(int id, int age, String name) {
         super(id);
-        System.out.println("Inne i dog const");
         this.age = age;
         this.name = name;
+    }
+
+    public Dog(int id) {
+        this(id, 0, "No_name");
     }
 
     public int getAge() {

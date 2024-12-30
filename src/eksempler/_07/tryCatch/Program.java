@@ -5,29 +5,24 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Program {
-    public void methodA() {
+    public void methodA() throws FileNotFoundException {
         System.out.println("In methodA...");
         System.out.println("Calling methodB...");
         methodB();
         System.out.println("MethodA done! Returning to caller.");
     }
 
-    public void methodB() {
+    public void methodB() throws FileNotFoundException {
         System.out.println("In methodB...");
         System.out.println("Calling methodC...");
         methodC();
         System.out.println("MethodB done! Returning to caller.");
     }
 
-    public void methodC() {
+    public void methodC() throws FileNotFoundException{
         System.out.println("In methodC...");
         File file = new File("files/artister.txt");
-        Scanner input = null;
-        try {
-            input = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        Scanner input = new Scanner(file);
         while(input.hasNextLine()){
             String s = input.nextLine();
             System.out.println(s);

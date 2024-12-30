@@ -8,6 +8,10 @@ public class Cat implements Animal{
 
     @Override
     public void sleep() {
-        System.out.println("ZzzZZZ");
+        System.out.println("ZzZzZ");
+    }
+
+    public void someMethod(){
+        System.out.println("zsfgjhasfg ");
     }
 }

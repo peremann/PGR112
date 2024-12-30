@@ -10,6 +10,10 @@ public final class Dog extends Animal {
         this.name = name;
     }
 
+    public Dog(int id) {
+        this(id, 0, "No_name");
+    }
+
     public int getAge() {
         return age;
     }

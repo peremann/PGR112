@@ -9,7 +9,5 @@ public class Main {
         p1 = null;
         p2 = null;
         System.out.println("GC ready?");
-        // Kjøre i debug
-
     }
 }

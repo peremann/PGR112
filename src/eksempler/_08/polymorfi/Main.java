@@ -21,7 +21,5 @@ public class Main {
         for (Animal a: animals){
             a.makeSound();
         }
-
-        // Traverse list. What is available? What happens?
     }
 }

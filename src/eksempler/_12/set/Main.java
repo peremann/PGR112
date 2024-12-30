@@ -6,8 +6,6 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-
-
         HashSet<String> setOfStrings = new HashSet<>();
         setOfStrings.add("Dette");
         setOfStrings.add("Dette");
@@ -20,13 +18,12 @@ public class Main {
         for (String string : setOfStrings) {
             System.out.println(string);
         }
+        System.out.println("contains ingen:" + setOfStrings.contains("ingen"));
+        setOfStrings.remove("har");
         System.out.println("---");
         for (String string : setOfStrings) {
             System.out.println(string);
         }
-
-        // Traverse
-        // Check contains and remove
     }
 
 }

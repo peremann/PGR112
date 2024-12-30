@@ -6,10 +6,11 @@ public class Main {
         a1.setName("Per");
         Animal a2 = new Animal();
         a2.setName("Per");
-        //Test equals
-        boolean b = a1.equals(a2);
-        System.out.println(b);
-        //Test hashCode
-        //Implement equals and hashCode in Animal
+        boolean equal = a1.equals(a2);
+        System.out.println(equal);
+        int i = a1.hashCode();
+        int j = a2.hashCode();
+        System.out.println(i);
+        System.out.println(j);
     }
 }

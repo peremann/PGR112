@@ -4,18 +4,18 @@ public class Program {
     public void methodA() {
         System.out.println("In methodA...");
         System.out.println("Calling methodB...");
-        methodB();
+        try {
+            methodB();
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught!");
+        }
         System.out.println("MethodA done! Returning to caller.");
     }
 
     public void methodB() {
         System.out.println("In methodB...");
         System.out.println("Calling methodC...");
-        try{
-            methodC();
-        } catch(ArithmeticException ae){
-            System.out.println("Huff da: Unntak...");
-        }
+        methodC();
         System.out.println("MethodB done! Returning to caller.");
     }
 
