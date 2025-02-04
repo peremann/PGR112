@@ -52,5 +52,19 @@ public class Main {
             System.out.println("No football player found");
         }
 
+        int nrOfFootballPLayers = fpc.getNumberOfPlayers();
+        System.out.println("Number of players in collection:"+nrOfFootballPLayers);
+
+        boolean removed = fpc.removePlayerByName("Per");
+        System.out.println("Removed? : " + removed);
+
+        removed = fpc.removePlayerByName("Frederic");
+        System.out.println("Removed? : " + removed);
+
+        nrOfFootballPLayers = fpc.getNumberOfPlayers();
+        System.out.println("Number of players in collection:"+nrOfFootballPLayers);
+
+        boolean removed2 = fpc.removePlayer(footballPlayer2);
+        System.out.println("Removed2:" + removed2);
     }
 }
