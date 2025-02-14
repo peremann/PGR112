@@ -1,0 +1,100 @@
+1
+=
+Alex Warren - Ordinary
+6
+1	(x2)
+101,539
++1,175
+553,814
++101,539
+553,814
+2
+=
+Astrid S - Få det på (w/ Stig Brenner, Hver gang vi møtes)
+13
+1	(x8)
+89,448
+-5,088
+673,300
+-17,979
+1,141,954
+3
++1
+Kendrick Lamar - Not Like Us
+185
+3	(x1)
+82,680
++10,447
+319,075
++57,950
+6,275,429
+4
+-1
+Astrid S - Nanana (w/ Hver gang vi møtes)
+6
+3	(x2)
+79,312
++1,353
+357,411
++79,312
+357,411
+5
+=
+ROSÉ - APT. (w/ Bruno Mars)
+118
+1	(x7)
+71,999
+-88
+537,422
+-5,395
+7,042,835
+6
+=
+Lady Gaga - Die With A Smile (w/ Bruno Mars)
+181
+1	(x42)
+68,737
+-1,714
+514,774
+-5,901
+13,342,921
+7
++4
+Kendrick Lamar - All The Stars (w/ SZA)
+541
+5
+61,372
++7,568
+247,279
++40,594
+12,526,057
+8
+-1
+Kjartan Lauritzen - Fanga av ein stormvind (w/ Hver gang vi møtes)
+43
+1	(x18)
+58,432
+-2,179
+451,018
+-8,975
+3,607,397
+9
+-1
+Lola Young - Messy
+75
+4
+57,309
+-831
+428,080
+-5,694
+4,081,999
+10
+-1
+Gracie Abrams - That’s So True
+118
+1	(x5)
+55,475
+-620
+402,350
+-3,929
+7,757,698
