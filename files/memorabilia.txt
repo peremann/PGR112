@@ -1,0 +1,280 @@
+Skateboard
+1
+Tony Hawk Pro Skater
+2020
+Tony Hawk
+Used in the X Games 2020
+1500
+Street
+---
+Poster
+11
+Back to the Future Poster
+1985
+Michael J. Fox
+Signed by the cast of Back to the Future movie.
+300
+60
+80
+---
+SportsEquipment
+21
+World Cup Football
+2014
+Lionel Messi
+Used in the World Cup Final.
+5000
+Football
+---
+Skateboard
+2
+Birdhouse Falcon 3
+2018
+Tony Hawk
+Featured in the video game Tony Hawk's Pro Skater
+1200
+Vert
+---
+Poster
+12
+The Godfather Poster
+1972
+Marlon Brando
+Signed by Marlon Brando and Al Pacino.
+500
+60
+80
+---
+SportsEquipment
+22
+NBA Basketball
+1998
+Michael Jordan
+Used in the NBA Finals.
+4500
+Basketball
+---
+Skateboard
+3
+Element Section
+2019
+Nyjah Huston
+Used in Street League Skateboarding Championship
+1300
+Longboard
+---
+Poster
+13
+Star Wars Poster
+1977
+Mark Hamill
+Signed by the original Star Wars cast.
+450
+80
+120
+---
+SportsEquipment
+23
+Super Bowl Helmet
+2002
+Tom Brady
+Worn during the Super Bowl XXXVI.
+4000
+American football
+---
+Skateboard
+4
+Plan B Sheckler
+2017
+Ryan Sheckler
+Used in the Dew Tour 2017
+1100
+Old school
+---
+Poster
+14
+Pulp Fiction Poster
+1994
+John Travolta
+Signed by John Travolta and Uma Thurman.
+350
+75
+90
+---
+SportsEquipment
+24
+Olympic Gold Medal
+2008
+Usain Bolt
+Won in the 100m sprint.
+6000
+Track and field
+---
+Skateboard
+5
+Girl Koston
+2016
+Eric Koston
+Featured in the movie "Lords of Dogtown"
+1000
+Mini
+---
+Poster
+15
+The Dark Knight Poster
+2008
+Christian Bale
+Signed by Christian Bale and Heath Ledger.
+400
+120
+60
+---
+SportsEquipment
+25
+Wimbledon Tennis Racket
+2001
+Roger Federer
+Used in Wimbledon Final.
+3500
+Tennis
+---
+Skateboard
+6
+Zero Thomas
+2015
+Jamie Thomas
+Used in the Thrasher King of the Road
+900
+Downhill
+---
+Poster
+16
+Fight Club Poster
+1999
+Brad Pitt
+Signed by Brad Pitt and Edward Norton.
+320
+65
+65
+---
+SportsEquipment
+26
+Baseball Bat
+2004
+Barry Bonds
+Used to hit his 700th home run.
+3000
+Baseball
+---
+Skateboard
+7
+Almost Mullen
+2014
+Rodney Mullen
+Used in the documentary "The Man Who Souled the World"
+800
+Street
+---
+Poster
+17
+Inception Poster
+2010
+Leonardo DiCaprio
+Signed by Leonardo DiCaprio and Christopher Nolan.
+380
+90
+90
+---
+SportsEquipment
+27
+Tour de France Bicycle
+2005
+Lance Armstrong
+Used to win the Tour de France.
+5500
+Cycling
+---
+Skateboard
+8
+Baker Reynolds
+2013
+Andrew Reynolds
+Used in the Baker 3 video
+700
+Cruiser
+---
+Poster
+18
+The Matrix Poster
+1999
+Keanu Reeves
+Signed by Keanu Reeves and Laurence Fishburne.
+340
+80
+100
+---
+SportsEquipment
+28
+Cricket Bat
+2011
+Sachin Tendulkar
+Used in the Cricket World Cup Final.
+3200
+Cricket
+---
+Skateboard
+9
+Santa Cruz Roskopp
+2012
+Rob Roskopp
+Featured in the movie "Thrashin'"
+600
+Longboard
+---
+Poster
+19
+The Shawshank Redemption Poster
+1994
+Tim Robbins
+Signed by Tim Robbins and Morgan Freeman.
+360
+60
+60
+---
+SportsEquipment
+29
+Boxing Gloves
+1987
+Mike Tyson
+Worn during a heavyweight title fight.
+3700
+Boxing
+---
+Skateboard
+10
+Powell Peralta Caballero
+2011
+Steve Caballero
+Used in the Bones Brigade video series
+500
+Old school
+---
+Poster
+20
+Forrest Gump Poster
+1994
+Tom Hanks
+Signed by Tom Hanks and Robin Wright.
+400
+120
+120
+---
+SportsEquipment
+30
+Formula 1 Racing Suit
+2020
+Lewis Hamilton
+Worn during a championship race.
+4800
+Formula 1
+---
