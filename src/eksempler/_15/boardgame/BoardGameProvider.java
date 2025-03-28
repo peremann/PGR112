@@ -1,4 +1,4 @@
-package eksempler._15;
+package eksempler._15.boardgame;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static eksempler._15.PropertiesProvider.PROPS;
+import static eksempler._15.boardgame.PropertiesProvider.PROPS;
 
 public class BoardGameProvider {
     // You may consider having these SQL statements in a separate file.

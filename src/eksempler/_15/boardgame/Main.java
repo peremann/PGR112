@@ -1,4 +1,4 @@
-package eksempler._15;
+package eksempler._15.boardgame;
 
 import java.sql.SQLException;
 import java.util.List;
