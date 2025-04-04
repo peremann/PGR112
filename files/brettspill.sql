@@ -1,4 +1,5 @@
 -- Opprett databasen
+DROP DATABASE IF EXISTS brettspill;
 CREATE DATABASE brettspill;
 
 -- Bruk databasen
@@ -14,6 +15,17 @@ CREATE TABLE brettspill (
     aldersgrense INT NOT NULL,
     bilde VARCHAR(255)
 );
+
+DELIMITER $$
+CREATE PROCEDURE `addBoardGame`(IN navn TEXT, IN type TEXT,
+		IN antall_spillere INT, IN spilletid INT, IN aldersgrense INT, IN bilde TEXT, OUT generatedId INT)
+BEGIN
+         INSERT INTO brettspill (navn, type, antall_spillere, spilletid, aldersgrense, bilde)
+         VALUES (navn, type, antall_spillere, spilletid, aldersgrense, bilde);
+         COMMIT;
+         SET generatedId = LAST_INSERT_ID();
+       END$$
+DELIMITER ;
 
 -- Setter inn 5 rader med data
 INSERT INTO brettspill (navn, type, antall_spillere, spilletid, aldersgrense, bilde) VALUES
