@@ -3,7 +3,7 @@ package eksempler._06.football;
 import java.util.ArrayList;
 
 public class FootballPlayerCollection {
-    private ArrayList<FootballPlayer> players;
+    private ArrayList<FootballPlayer> players = new ArrayList<>();
 
     public ArrayList<FootballPlayer> getPlayers() {
         return this.players;
@@ -68,11 +68,11 @@ public class FootballPlayerCollection {
         footballPlayer3.setName("Huzefa");
         footballPlayer3.setSalary(1000000000);
         footballPlayer3.setYears(22);
-        // Place them in an array
-        players = new ArrayList<>();
-        players.add(footballPlayer1);
-        players.add(footballPlayer2);
-        players.add(footballPlayer3);
-        setPlayers(players);
+        // Place them in an arrayList
+        ArrayList<FootballPlayer> initialPlayers = new ArrayList<>();
+        initialPlayers.add(footballPlayer1);
+        initialPlayers.add(footballPlayer2);
+        initialPlayers.add(footballPlayer3);
+        setPlayers(initialPlayers);
     }
 }

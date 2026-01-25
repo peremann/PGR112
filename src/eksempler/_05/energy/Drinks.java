@@ -1,6 +1,7 @@
 package eksempler._05.energy;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Drinks {
     ArrayList<EnergyDrink> energyDrinks = new ArrayList<>();
@@ -13,5 +14,14 @@ public class Drinks {
         return energyDrinks.size();
     }
 
+    public void removeEnergyDrink(EnergyDrink energyDrink){
+        energyDrinks.remove(energyDrink);
+    }
+
+    public EnergyDrink removeRandomEnergyDrink(){
+        Random r = new Random();
+        int i = r.nextInt(energyDrinks.size());
+        return energyDrinks.remove(i);
+    }
 
 }

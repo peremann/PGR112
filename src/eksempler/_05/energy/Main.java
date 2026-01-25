@@ -18,5 +18,9 @@ public class Main {
 
         int nrOfDrinks = drinks.nrOfEnergyDrinks();
         System.out.println("Nr of drinks:"+nrOfDrinks);
+
+        drinks.removeEnergyDrink(ed2);
+        nrOfDrinks = drinks.nrOfEnergyDrinks();
+        System.out.println("Nr of drinks:"+nrOfDrinks);
     }
 }
