@@ -18,7 +18,7 @@ public class CakeLottery {
             System.out.println("2: Pick cake winner");
             System.out.println("3: Quit");
             Scanner scanner = new Scanner(System.in);
-            choice = scanner.nextInt();
+            choice = Integer.parseInt(scanner.nextLine());
             switch (choice){
                 case 1 -> addEmployee();
                 case 2 -> selectWinner();
@@ -39,6 +39,18 @@ public class CakeLottery {
     }
 
     private void addEmployee() {
-        System.out.println("Her I will add employee (TODO)");
+        System.out.println("Please enter name:");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Please enter email:");
+        String email = scanner.nextLine();
+        System.out.println("Please enter age:");
+        int age = scanner.nextInt();
+        Employee emp = new Employee();
+        emp.setAge(age);
+        emp.setName(name);
+        emp.setEmail(email);
+        //scanner.close();
+        winnerSelector.addEmployee(emp);
     }
 }

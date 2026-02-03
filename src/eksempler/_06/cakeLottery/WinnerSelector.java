@@ -1,5 +1,6 @@
 package eksempler._06.cakeLottery;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -13,7 +14,10 @@ public class WinnerSelector {
         return employees.remove(index);
     }
 
-    public void populateEmployees(){
+    public void populateEmployees() throws FileNotFoundException {
+        EmployeeReader reader = new EmployeeReader();
+        employees = reader.readEmployeesFromFile();
+        /*
         Employee employee1 = new Employee();
         employee1.setEmail("jens@tull.no");
         employee1.setName("Jens");
@@ -31,5 +35,11 @@ public class WinnerSelector {
         employee3.setName("Ina");
         employee3.setAge(24);
         employees.add(employee3);
+
+         */
+    }
+
+    public void addEmployee(Employee employee) {
+        employees.add(employee);
     }
 }
