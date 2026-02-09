@@ -7,10 +7,10 @@ import java.util.Scanner;
 
 public class EmployeeReader {
     // We need to know what file to read from
-    String filename = "files/employees.txt";
+    //String filename = "files/employees.txt";
 
     // We will offer a method for reading employees from a file and return them.
-    public ArrayList<Employee> readEmployeesFromFile() throws FileNotFoundException {
+    public ArrayList<Employee> readEmployeesFromFile(String filename) throws FileNotFoundException {
         File file = new File(filename);
         Scanner scanner = new Scanner(file);
         ArrayList<Employee> employeesToReturn = new ArrayList<>();

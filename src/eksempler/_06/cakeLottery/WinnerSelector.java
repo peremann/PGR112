@@ -14,9 +14,11 @@ public class WinnerSelector {
         return employees.remove(index);
     }
 
-    public void populateEmployees() throws FileNotFoundException {
+    public void populateEmployees(String fileName) throws FileNotFoundException {
         EmployeeReader reader = new EmployeeReader();
-        employees = reader.readEmployeesFromFile();
+        ArrayList<Employee> employeesReadFromFile = reader.readEmployeesFromFile(fileName);
+        employees.addAll(employeesReadFromFile);
+        //employees = reader.readEmployeesFromFile(fileName);
         /*
         Employee employee1 = new Employee();
         employee1.setEmail("jens@tull.no");

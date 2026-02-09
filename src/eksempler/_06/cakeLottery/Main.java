@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Program running.");
         CakeLottery cl = new CakeLottery();
         WinnerSelector ws = new WinnerSelector();
-        ws.populateEmployees();
+        //ws.populateEmployees();
         cl.setWinnerSelector(ws);
         cl.menu();
     }
